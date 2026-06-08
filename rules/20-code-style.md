@@ -7,7 +7,10 @@ Readable code is good code. The person reading it later is me.
 1. **Use type hints.** Specify argument and return types. Don't make the reader guess.
 2. **Name things clearly.** Descriptive variables (`learning_rate`, `batch_size`), verb+noun functions (`compute_reward`), PascalCase classes (`PPOAgent`).
 3. **Keep functions short.** One function, one job. Over 50 lines — split it.
-4. **Import order.** Standard library → third-party → local.
+4. **Keep files focused.** One file, one responsibility. Over 600 lines — it's a god file, split by responsibility.
+5. **Import order.** Standard library → third-party → local.
+
+> Structure, coupling, error-handling, SSOT, and CI enforcement live in `21-architecture.md`. This file is micro-style only.
 
 ## Reproducibility
 
@@ -23,5 +26,5 @@ Readable code is good code. The person reading it later is me.
 
 ## Safety
 
-1. **Check for NaN/Inf.** Add shape, NaN, Inf checks on critical tensors. Finding out after it crashes is too late.
+1. **Check critical tensor invariants.** Check shape/NaN/Inf at external ingestion points and core tensor boundaries — not duplicated at every call site (see `21-architecture.md`). Finding out after it crashes is too late.
 2. **No GPU hardcoding.** Check `nvidia-smi` and allocate dynamically. (See 13-server.md)

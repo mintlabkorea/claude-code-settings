@@ -38,7 +38,7 @@ Skip if `context/gpt-pro/` does not exist.
 
 2. **`context/short_term.md`** — What was done last session, what to do next.
    - After reading this, you should be able to continue work immediately. If ambiguous, confirm with user.
-   - **Also read the most recent `context/archive/short_term_*.md`** (1 file only). Glob to find the latest. Gives context from the session before last for better continuity. Skip if none exists.
+   - **Also read the most recent `context/archive/short_term_*.md`** (1개만). Glob으로 찾아서 가장 최신 파일. 이전 세션 맥락까지 파악하면 연속성이 더 좋다. 없으면 건너뛴다.
 
 3. **`context/long_term.md`** — Confirmed conclusions, directions, and rationale.
    - Must understand the basis for the current direction. If unclear, ask questions.
@@ -50,9 +50,7 @@ Skip if `context/gpt-pro/` does not exist.
 
 ---
 
----
-
-## Phase 3: Report
+## Phase 2: Report
 
 Report the current state to the user **with specifics.** Empty statements like "context load complete" are forbidden.
 

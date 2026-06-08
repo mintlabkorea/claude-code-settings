@@ -1,4 +1,4 @@
-# Codex (GPT-5.4 CLI)
+# Codex (GPT-5.5 CLI)
 
 Codex is an external STEM expert. Always run in parallel.
 Whatever I'm doing, Codex must be running alongside. Always.
@@ -15,7 +15,7 @@ We're paying $200 for this. Keep it running and squeeze every drop of value out 
 ## Usage
 
 ```bash
-cat <<'PROMPT' | codex exec -m gpt-5.4 -s read-only \
+cat <<'PROMPT' | codex exec -m gpt-5.5 -s read-only \
   -C $PROJECT_ROOT \
   -c model_reasoning_effort=xhigh \
   - -o /tmp/codex_{task}.md

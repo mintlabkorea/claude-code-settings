@@ -29,7 +29,7 @@ Run `/interview` before:
 2. **All outcomes informative.** Success means X, failure means Y, null means Z. If "failure = no info", you're praying, not testing.
 3. **Load-bearing assumption identified.** Which assumption, if wrong, kills the work? Can it be tested first, separately?
 4. **Decision tree visible.** Not just step 1 — the whole arc. "If X then Y, if A then B."
-5. **Unfamiliar parts understood.** A polite "okay" without engagement is not understanding. Probe with: "How would you apply this to our X?"
+5. **Unfamiliar parts understood.** "응" without engagement is politeness, not understanding. Probe with: "그럼 이걸 우리 X에 어떻게 적용해?"
 
 ## Six Interview Disciplines
 

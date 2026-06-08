@@ -6,7 +6,7 @@ An experiment without a log is an experiment that never happened.
 ## YYYY-MM-DD
 ### Experiment Name
 
-- **Server/Path**: {where it was run}
+- **Server/Path**: phnn-ae:/data/jungho/MIMIC (or mintlab)
 - **Intent**: Why this experiment was run. What the hypothesis was.
 - **Setup**:
   - Seeds: {N}

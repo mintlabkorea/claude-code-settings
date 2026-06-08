@@ -1,0 +1,43 @@
+# Credentials (NEVER commit)
+.credentials.json
+
+# Runtime / cache
+cache/
+debug/
+file-history/
+paste-cache/
+plans/
+plugins/
+session-env/
+shell-snapshots/
+statsig/
+tasks/
+teams/
+telemetry/
+todos/
+transcripts/
+usage-data/
+backups/
+hooks/
+
+# Large / volatile files
+history.jsonl
+stats-cache.json
+
+# Projects (session data, not config)
+projects/
+
+# Daemon / jobs / misc runtime state
+daemon/
+daemon.lock
+daemon.log
+daemon.status.json
+jobs/
+.last-cleanup
+.last-update-result.json
+mcp-needs-auth-cache.json
+settings.json.bak*
+
+# Git internals
+.git/
+sessions/

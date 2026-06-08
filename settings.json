@@ -1,0 +1,54 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Edit",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "MCP(github)",
+      "MCP(memory)",
+      "MCP(context7)",
+      "MCP(sequential-thinking)",
+      "MCP(wandb)",
+      "mcp__memory__create_entities",
+      "mcp__memory__search_nodes",
+      "mcp__memory__read_graph",
+      "mcp__memory__add_observations",
+      "mcp__memory__delete_entities",
+      "mcp__memory__delete_observations",
+      "mcp__memory__delete_relations",
+      "mcp__memory__create_relations",
+      "mcp__memory__open_nodes",
+      "mcp__sequential-thinking__sequentialthinking",
+      "mcp__wandb__query_wandb_tool",
+      "mcp__wandb__count_weave_traces_tool",
+      "mcp__wandb__query_weave_traces_tool",
+      "mcp__wandb__create_wandb_report_tool",
+      "mcp__wandb__query_wandb_entity_projects",
+      "mcp__wandb__query_wandb_support_bot",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs"
+    ],
+    "defaultMode": "auto"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "/home/jungho/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "slack@claude-plugins-official": true
+  },
+  "effortLevel": "high",
+  "promptSuggestionEnabled": false,
+  "skipWorkflowUsageWarning": true,
+  "autoCompactEnabled": false,
+  "skipAutoPermissionPrompt": true,
+  "voiceEnabled": false,
+  "model": "claude-opus-4-6[1m]"
+}

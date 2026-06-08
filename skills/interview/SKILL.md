@@ -9,11 +9,11 @@ tools: Read, Write, Glob, Grep, Bash, AskUserQuestion, WebFetch, WebSearch
 
 Before any non-trivial work, run an interview to nail down the goal, the load-bearing assumptions, the decision tree, and shared understanding. The cheapest way to undo a wrong assumption is to find it before you act on it.
 
-Patterns extracted from:
+References (general patterns extracted from):
 - `mattpocock/skills` — `/grill-me`, `/grill-with-docs`
 - `Q00/ouroboros` — interview phase, socratic-interviewer, breadth-keeper, seed-closer agents
 
-Tuned for research work (experiments, theory, ablations, paper/communication, multi-step plans), not software-product PRD interviews.
+This is not a software-product PRD interview. It's tuned for research work — experiments, theory, ablations, paper/communication, multi-step plans.
 
 ---
 
@@ -26,7 +26,7 @@ Every turn of every interview obeys these six rules. They are not optional.
 3. **Provide a recommended answer with each question.** Don't ask cold. Propose what you'd answer based on what you can see, with one-line reasoning. The user accepts, corrects, or refines — much faster than answering blank.
 4. **Read code/data/docs before asking.** If the answer lives in the codebase, a config, a log, a paper, or fetchable docs — find it first. Reserve the user's attention for genuinely human decisions.
 5. **Sharpen fuzzy terms immediately.** When the user says "works", "good", "fast", "stable" — pin down a number or a specific operationalization before continuing. Vague language hides disagreements.
-6. **Stress-test with concrete scenarios.** Abstractions hide bugs. Pick specific cases ("what if the result is X on seed 1 and Y on seed 2?", "what if the metric goes up but the controls also go up?") and probe.
+6. **Stress-test with concrete scenarios.** Abstractions hide bugs. Pick specific cases ("what if the result is X on seed 1 and Y on seed 2?", "what if metric goes up but the controls also go up?") and probe.
 
 ---
 
@@ -86,7 +86,7 @@ Why this matters: <one line on what changes downstream>
 ### Question Templates by Category
 
 **Experiment**
-- "If the result is X, what does that mean? If Y? If null?" — all outcomes must be informative
+- "If the result is X, what does that mean? If Y? If null?" — both/all outcomes must be informative
 - "What's the simplest assumption that, if wrong, kills the conclusion?" — load-bearing assumption
 - "Is there a smaller version that proves the same thing?" — start-small
 - "What confound would produce the same result without our hypothesis being true?" — validity threats
@@ -178,7 +178,7 @@ Reset counter on any direct user answer.
 ## Phase 5: Anti-Drift Checks (run every 3-4 questions)
 
 - **Breadth check**: "We've focused on [track]. Other open tracks: [...]. Resolved elsewhere or unresolved?"
-- **Concrete-scenario test**: Pick one specific case. If the user can't answer it, that's a real ambiguity, not a bikeshed.
+- **Concrete-scenario test**: Pick one specific case. If the user can't answer it, that's a real ambiguity not a bikeshed.
 - **Term sharpening**: User used a fuzzy word ("works", "stable", "good"). Pin it down. *"By 'works', do you mean ≥X on metric Y over Z seeds?"*
 - **Cross-reference**: Does the code/data/log agree with what the user just said? If not, surface it. *"You said the encoder is frozen, but I see `requires_grad=True` in [file:line] — which?"*
 - **Educate gap**: Does any answer rest on a concept the user hasn't engaged with? Pause and explain (essence / mechanism / boundary / position-vs-alternatives) before continuing.
@@ -268,7 +268,7 @@ If the project has a glossary or domain doc (e.g. `CONTEXT.md`, terms doc), upda
 
 ## Override Behavior
 
-User says any of: "just do it" / "skip" / "this is clear"
+User says any of: "그냥 해" / "skip" / "this is clear" / "just do it"
 
 - Run the **30-second abbreviated version**: goal sentence + outcome scenarios + load-bearing assumption.
 - If the user can't articulate even those three in one breath, push back once — the override is premature.
