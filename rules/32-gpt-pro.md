@@ -18,6 +18,10 @@ We're paying $200. Send 10 if you want. Not using it is wasting money. Ask often
 
 ## Prompt Rules
 
+- **Demand the best, not the average (motto, 00-obvious.md).** Tell Pro explicitly: no
+  textbook-default answers; every recommendation must be derived from OUR instrument,
+  physics, and reviewer, or flagged as generic. Evaluate its reply against the
+  best-engineer bar before adopting anything.
 - **Include extremely detailed context.** Pro can't see our code or our conversation — nothing. Don't throw things thinking "it'll figure it out." What we're doing, why we're stuck, what we've tried, what constraints exist — write it so reading just the prompt gives full understanding. Insufficient explanation = insufficient answer.
 - **Depth over breadth.** Make it think deeper and longer to extract insights we don't have. Write the prompt properly. Communication is key.
 - **Include what we know, but don't overcommit.** Provide our experiment results as reference. But don't forget our experiments could be wrong. Leave room for Pro to see from a different angle.
